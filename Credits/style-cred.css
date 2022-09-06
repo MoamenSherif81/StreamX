@@ -147,8 +147,6 @@ hr {
     -o-border-radius: 10px;
 }
 
-.box:hover img {}
-
 
 p {
     color: white;
@@ -188,8 +186,6 @@ video {
     position: absolute;
     height: 300%;
 }
-
-#vvv {}
 
 .banner h2 {
     position: absolute;
@@ -265,10 +261,6 @@ video {
 }
 
 
-
-#mmm {}
-
-
 .cont2 {
     display: flex;
     flex-wrap: wrap;
@@ -290,6 +282,7 @@ h2 {
 @media (min-width: 1500px) {
     .cont {
         width: 70%;
+        max-width: 1000px;
     }
 }
 
@@ -298,8 +291,6 @@ h2 {
         width: 100%;
     }
 }
-
-.all {}
 
 footer {
     margin-top: 50px;
