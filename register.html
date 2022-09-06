@@ -1,0 +1,139 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>StreamX</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/x-icon" href="media/favicon.png">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Fontawesome CSS -->
+    <link rel="stylesheet" href="css/fontawesome-all.min.css">
+    <!-- Flaticon CSS -->
+    <link rel="stylesheet" href="font/flaticon.css">
+    <!-- Google Web Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&amp;display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/login.css">
+</head>
+
+<body class="body-sign">
+
+    <div id="preloader" class="preloader">
+        <div class='inner'>
+            <div class='line1'></div>
+            <div class='line2'></div>
+            <div class='line3'></div>
+        </div>
+    </div>
+    <section class="fxt-template-animation main-layout" data-bg-image="media/elements/bg1.png">
+        <div class="fxt-shape">
+            <div class="fxt-transformX-L-50 fxt-transition-delay-1">
+                <img src="media/elements/shape1.png" alt="Shape">
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8">
+                    <div class="fxt-column-wrap justify-content-between">
+
+                        <div class="fxt-transformX-L-50 fxt-transition-delay-3">
+                            <a href="index.html" class="fxt-logo"><img src="media/logo-34.png" alt="Logo"></a>
+                        </div>
+                        <div class="fxt-transformX-L-50 fxt-transition-delay-5">
+                            <div class="fxt-middle-content">
+                                <h1 class="fxt-main-title">Sign In to Rechage Direct</h1>
+                                <div class="fxt-switcher-description1">If you have an account You can<a href="index.html" class="fxt-switcher-text ms-2">Sign In</a></div>
+                            </div>
+                        </div>
+                        <div class="fxt-transformX-L-50 fxt-transition-delay-7">
+                            <div class="fxt-qr-code">
+                                <img src="media/elements/qr-register-34.png" alt="QR">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="fxt-column-wrap justify-content-center">
+                        <div class="fxt-form">
+                            <form id="myForm2">
+                                <div class="form-group">
+                                    <input type="text" id="f_name" class="form-control" name="f_name" placeholder="Fast Name" required="required">
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" id="l_name" class="form-control" name="l_name" placeholder="Last Name" required="required">
+                                </div>
+                                <div class="form-group">
+                                    <input type="email" id="email2" class="form-control" name="email" placeholder="E-mail Address" required="required">
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" id="img1" class="form-control" name="img" placeholder="Personal Image URL" required="required">
+                                </div>
+                                <div class="form-group">
+                                    <input id="password2" type="password" class="form-control" name="password" placeholder="********" required="required">
+                                    <i toggle="#password2" class="fa fa-fw fa-eye toggle-password field-icon"></i>
+                                </div>
+                                <div class="form-group">
+                                    <div class="fxt-checkbox-box">
+                                        <input id="checkbox1" type="checkbox" required>
+                                        <label for="checkbox1" class="ps-4">I agree with <a
+                                        class="terms-link" href="#">Terms</a> and <a class="terms-link" href="#">Privacy Policy</a></label>
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <button type="submit" class="fxt-btn-fill">Sign Up</button>
+                                </div>
+
+
+                            </form>
+                        </div>
+                        <div class="fxt-style-line">
+                            <span>Or Continus with</span>
+                        </div>
+                        <ul class="fxt-socials">
+                            <li class="fxt-google">
+                                <a href="#" onclick="gmail()" title="google"><i class="fab fa-google"></i></a>
+                            </li>
+                            <li class="fxt-apple">
+                                <a href="#" onclick="apple()" title="apple"><i class="fab fa-apple"></i></a>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- jquery-->
+    <script src="js/jquery-3.5.0.min.js"></script>
+    <!-- Bootstrap js -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- Imagesloaded js -->
+    <script src="js/imagesloaded.pkgd.min.js"></script>
+    <!-- Validator js -->
+    <script src="js/validator.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="js/login.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.4.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.4.2/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.4.2/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.4.2/firebase.js"></script>
+    <script src='https://cdn.firebase.com/js/client/2.2.1/firebase.js'></script>
+    <script src="https://www.gstatic.com/firebasejs/6.4.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.4.2/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.4.2/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.4.2/firebase.js"></script>
+    <script src="js/config.js"></script>
+    <script src="js/auth.js"></script>
+
+
+</body>
+
+</html>

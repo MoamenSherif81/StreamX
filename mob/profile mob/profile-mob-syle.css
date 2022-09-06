@@ -1,0 +1,430 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Source Sans Pro', sans-serif;
+    transition: all 0.2s;
+}
+
+body {
+    overflow-x: hidden;
+    max-width: 100%;
+    height: 100vh;
+}
+
+.container {
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-left: 29px;
+    margin-right: 29px;
+}
+
+@media (max-width:767px) {
+    .header {
+        padding-top: 34px;
+    }
+
+    .header i {
+        font-size: 20px;
+        color: white;
+        position: relative;
+    }
+
+    .top-side {
+        height: 62vh;
+        overflow: hidden;
+        position: relative;
+    }
+
+    main {
+        height: 100%;
+    }
+
+    .portait-blur {
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+        filter: blur(20px);
+        transform: scale(1.6);
+        -webkit-filter: blur(20px);
+        transform: scaleY(1.1);
+        -webkit-transform: scale(1.6);
+        -moz-transform: scale(1.6);
+        -ms-transform: scale(1.6);
+        -o-transform: scale(1.6);
+        position: absolute;
+        z-index: -1;
+        left: -19px;
+    }
+
+    .portait-blur-bottom {
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+        filter: blur(20px);
+        transform: scale(1.6);
+        -webkit-filter: blur(50px);
+        transform: scaleY(1.1);
+        -webkit-transform: scale(1.6);
+        -moz-transform: scale(1.6);
+        -ms-transform: scale(1.6);
+        -o-transform: scale(1.6);
+        position: absolute;
+        z-index: -1;
+        left: -19px;
+    }
+
+    .profile-photo-cont {
+        width: 100%;
+        text-align: center;
+        padding-top: 22px;
+    }
+
+    .profile-photo {
+        width: 109px;
+        height: 128px;
+        clip-path: circle();
+    }
+
+    .title {
+        text-align: center;
+        padding-top: 13px;
+    }
+
+    .title h3 {
+        color: white;
+        font-size: 25px;
+        font-weight: bolder;
+    }
+
+    .title p {
+        color: white;
+        font-size: 15px;
+
+        padding-top: 5px;
+    }
+
+    .bottom-side {
+        border-top-left-radius: 30px;
+        border-top-right-radius: 30px;
+        z-index: 999;
+        background-color: white;
+        position: relative;
+        top: calc(-82vh * 0.05);
+        width: 100%;
+        overflow: hidden;
+        border: 0.5px solid gray;
+        border-color: 1px solid black;
+        padding-bottom: 30px;
+    }
+
+    .static {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 22px;
+        text-align: center;
+        width: 80%;
+        margin: auto;
+    }
+
+    .cont-static span {
+        font-size: 20px;
+        color: white;
+        font-weight: 800;
+    }
+
+    .cont-static {
+        color: white;
+    }
+
+    .card {
+        padding-top: 20px;
+        display: flex;
+        margin-bottom: 20px;
+        padding-top: 43px;
+        justify-content: space-evenly;
+    }
+
+    .activity h2 {
+        padding-top: 40px;
+        text-align: center;
+        font-size: 28px;
+        color: white;
+        font-weight: 500;
+    }
+
+    .activity hr {
+        width: 60%;
+        margin: auto;
+        border: none;
+        background-color: white;
+        height: 0.5px;
+        border-radius: 50px;
+        -webkit-border-radius: 50px;
+        -moz-border-radius: 50px;
+        -ms-border-radius: 50px;
+        -o-border-radius: 50px;
+    }
+
+    .card:hover {
+        transform: scale(1.05);
+        -webkit-transform: scale(1.05);
+        -moz-transform: scale(1.05);
+        -ms-transform: scale(1.05);
+        -o-transform: scale(1.05);
+    }
+
+    .card img {
+        width: 112px;
+        height: 145px;
+        border-radius: 10px;
+    }
+
+    .card .inner p {
+        margin-left: 15px;
+        font-size: 14px;
+
+    }
+
+    .text h1 {
+        color: white;
+    }
+
+    .text p {
+        color: rgb(201, 201, 201);
+    }
+
+    .card .inner {
+        margin-top: 30px;
+        display: flex;
+        align-items: center;
+    }
+
+    .card .inner button {
+        padding: 7px;
+        border-radius: 7px;
+        border: none;
+        color: black;
+        cursor: pointer;
+        font-weight: bold;
+    }
+
+    .card .inner button:hover {
+        transform: scale(1.05);
+        -webkit-transform: scale(1.05);
+        -moz-transform: scale(1.05);
+        -ms-transform: scale(1.05);
+        -o-transform: scale(1.05);
+    }
+
+    .card .inner p {
+        margin-left: 15px;
+        color: rgb(201, 201, 201);
+    }
+
+
+}
+
+footer {
+    margin-top: -36px;
+    position: relative;
+    width: 100%;
+    min-height: 120px;
+    padding: 20px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #272726;
+}
+
+footer .socials,
+footer .menu {
+    position: relative;
+    display: flex;
+    margin: 10px 0;
+    flex-wrap: wrap;
+
+}
+
+.social {
+    flex-direction: column;
+}
+
+footer h3,
+footer p {
+    color: white;
+    margin: 0 10px 20px 10px;
+    padding: 0 40px;
+    max-width: 800px;
+    font-size: 11px;
+    letter-spacing: 0.5px;
+    line-height: 20px;
+}
+
+footer h4 {
+
+    color: white;
+    margin: 0 10px 20px 10px;
+    /* padding:0 40px;  */
+    max-width: 800px;
+    letter-spacing: 0.5px;
+}
+
+footer .socials li,
+footer .menu li {
+    list-style: none;
+}
+
+footer .menu {
+    margin-bottom: 0 10px 20px 10px;
+    font-size: 11px;
+}
+
+footer .socials li a {
+    font-size: 2em;
+    color: aliceblue;
+    margin: 0 10px;
+    display: inline-block;
+    transition: 0.5s;
+
+}
+
+footer .menu li a {
+    font-size: 1.2em;
+    color: aliceblue;
+    margin: 0 10px;
+    display: inline-block;
+    text-decoration: none;
+    opacity: 0.75;
+}
+
+footer .menu li a:hover {
+    opacity: 1;
+}
+
+footer .socials li a:hover,
+.app img:hover {
+    transform: translateY(-10px);
+}
+
+.app {
+    padding: 15px 50px;
+
+}
+
+.app img {
+
+    width: 120px;
+    transition: 0.5s;
+}
+
+
+@media(max-width:950px) {
+    .content {
+        flex-direction: column;
+        justify-content: center;
+
+
+    }
+}
+
+.icons222 {
+    display: flex;
+
+}
+
+@media (min-width:615px) and (max-width: 870px) {
+    .icons222 {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    footer {
+        position: relative;
+        width: 100%;
+        min-height: 120px;
+        padding: 20px 0;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        background: #272726;
+    }
+}
+
+@media (max-width:614.9px) {
+    .icons222 {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    footer {
+        position: relative;
+        width: 100%;
+        min-height: 120px;
+        padding: 20px 0;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        background: #272726;
+    }
+
+    footer .socials li a {
+        font-size: 17px;
+        color: aliceblue;
+        margin: 0 10px;
+        display: inline-block;
+        transition: 0.5s;
+    }
+
+    .app {
+        padding: 15px 9px;
+    }
+}
+
+.app img {
+    width: 73px;
+    transition: 0.5s;
+    margin-top: 13px;
+}
+
+footer h4 {
+    color: white;
+    margin: 0 10px 20px 10px;
+    /* padding: 0 40px; */
+    max-width: 800px;
+    width: fit-content;
+    margin: auto;
+    /* text-align: center; */
+    font-size: 11px;
+    letter-spacing: 0.5px;
+}
+
+.icons222 {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+footer .socials li,
+footer .menu li {
+    margin: auto;
+    list-style: none;
+}
+
+footer {
+    position: relative;
+    width: 100%;
+    min-height: 120px;
+    padding: 20px 0;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    background: #272726;
+}
